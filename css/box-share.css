@@ -1,0 +1,53 @@
+#share-show, #share-hide{
+  cursor:pointer;
+}
+
+#share-buttons{
+  display:none;
+}
+
+.container {
+    max-width: 208px;
+    margin: auto;
+    text-align:center;
+}
+
+.container::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.cube {
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    width: 100px; height: 100px;
+    color:#FFF;
+    border: 2px solid #FFF;
+    cursor:pointer;
+}
+
+.cube:hover{
+  opacity:0.85;
+}
+
+.share-facebook{
+  background:#3b5998;
+}
+
+.share-twitter{
+  background:#55ACEE;
+}
+
+.share-google{
+  background:#dd4b39;
+}
+
+.share-email{
+  background:#111;
+}
+
+i{
+  vertical-align: middle;
+}

@@ -11,6 +11,7 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,400italic,500|Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/box-share.css">
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,43 +20,36 @@
 
 <body>
 
-  <div id="share-controls">
-    <h2>
-      <span id="share-show"><i class="fa fa-fw fa-lg fa-share-alt"></i> Share</span>
-      <span id="share-hide" style="display:none;"><i class="fa fa-fw fa-lg  fa-times-circle"></i> Cancel</span>
-    </h2>
-  </div>
-
   <div id="share-widget" class="container">
-    <a href="#" target="_blank" title="Share on Facebook">
-      <div class="cube q1">
-        <i class="fa fa-fw fa-2x fa-facebook"></i>
-      </div>
-    </a>
+    <div id="share-controls">
+      <h2>
+        <span id="share-show" title="Share this page"><i class="fa fa-fw fa-lg fa-share-alt"></i> Share</span>
+        <span id="share-hide" style="display:none;" title="Cancel sharing"><i class="fa fa-fw fa-lg  fa-times-circle"></i> Cancel</span>
+      </h2>
+    </div>
 
-    <a href="#" target="_blank" title="Share on Twitter">
-      <div class="cube q2">
-        <i class="fa fa-fw fa-2x fa-twitter"></i>
-      </div>
-    </a>
+    <div id="share-buttons" class="container">
+        <div class="cube share-facebook" title="Share on Facebook">
+          <i class="fa fa-fw fa-2x fa-facebook"></i>
+        </div>
 
-    <a href="#" target="_blank" title="Share on Google Plus">
-      <div class="cube q3">
-        <i class="fa fa-fw fa-2x fa-google-plus"></i>
-      </div>
-    </a>
+        <div class="cube share-twitter" title="Share on Twitter">
+          <i class="fa fa-fw fa-2x fa-twitter"></i>
+        </div>
 
-    <a href="#" target="_blank" title="Share via email">
-      <div class="cube q4">
-        <i class="fa fa-fw fa-2x fa-send"></i>
-      </div>
-    </a>
-</div>
+        <div class="cube share-google" title="Share on Google+">
+          <i class="fa fa-fw fa-2x fa-google-plus"></i>
+        </div>
 
+        <div class="cube share-email" title="Share via email">
+          <i class="fa fa-fw fa-2x fa-send"></i>
+        </div>
+    </div>
+  </div>
 
   <!-- JaVAVAVAVAVa -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/box-share.js"></script>
 </body>
 </html>
